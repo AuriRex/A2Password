@@ -1,0 +1,180 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #0b0e0f;
+
+    /* overflow-x: hidden; */
+    /* overflow: hidden; */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+} 
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+} 
+
+.button-to-bottom {
+    position: absolute;
+
+
+    top: 90%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.button-to-top {
+    position: absolute;
+
+
+    top: 105%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+.bg-two {
+    height: 93vh;
+    filter: none;
+    background-color: #0b0e0f;
+
+    /* padding: 10%; */
+    /* margin: 10%; */
+}
+
+.terminal-container {
+    height: 75%;
+    width: 80%;
+    max-height: 75%;
+    overflow: hidden;
+
+    top: 146%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    /* justify-content: center; */
+
+    /* margin: 10%; */
+    /* padding: 2em; */
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+
+    color: white;
+    background-color: #040404;
+}
+
+.terminal-scroller {
+    width: 100%;
+}
+
+.terminal {
+    height: 100%;
+    max-height: max-content;
+    --animation: terminal-underline;
+    --size: 1.25;
+    --color: #bfd0cb;
+    --background: #040404;
+}
+
+.footer {
+    height: 7vh;
+    background-color: white;
+    align-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.one-thing {
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-image {
+    /* The image used */
+    /* background-image: url("img/GTFO_1.jpg"); */
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    /* -webkit-filter: blur(.5em); */
+  
+
+
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+    overflow: hidden;
+  }
+
+.text-thing {
+    width: 30em;
+
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    text-align: center;
+}
+
+.text-thing > span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+
+    color: white;
+    /* -webkit-text-stroke: 2px black;
+    text-stroke: 2px black; */
+    /* text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; */
+}
+
+#code {
+    font-size: 3em;
+}
+
+#code-next, #code-prev {
+    font-size: 2em;
+    color: gray;
+}
+
+.fira-mono-regular {
+    font-family: "Fira Mono", monospace; 
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fira-mono-medium {
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.fira-mono-bold {
+    font-family: "Fira Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}

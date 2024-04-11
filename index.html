@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Todays A2 Password is ...</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script src='GTFO_A2Hash.js'></script>
+    <script src='main.js'></script>
+    <script src='terminal.js'></script>
+
+    <!--Terminal Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+    <!--Cool interactive Terminal :D-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <template id="greetings">---------------------------------------------------------------
+TERMINAL OS v0.51
+---------------------------------------------------------------
+Welcome to [[b;;]TERMINAL_777], located in [[b;;]ZONE_101]
+
+There is 1 available log in this terminal
+
+Type "HELP" to get help using the terminal.
+Type "COMMANDS" to get a list of all available commands.
+Press [ESC] to exit
+</template>
+
+    <div id="up" class="one-thing">
+        <div class="text-thing">
+            <span id="code-prev" class="fira-mono-regular">A2PWD-HEREE</span>
+            <br/>
+            <span id="code" class="fira-mono-medium">A2PWD-HEREE</span>
+            <br/>
+            <span id="code-next" class="fira-mono-regular">A2PWD-HEREE</span>
+        </div>
+        <div id="bg-img" class="bg-image"></div>
+    </div>
+
+    <a href="#down" uk-scroll class="button-to-bottom uk-icon-button" uk-icon="chevron-down"></a>
+    <a href="#up" uk-scroll class="button-to-top uk-icon-button" uk-icon="chevron-up"></a>
+    
+    <div id="down" class="one-thing">
+        <div class="bg-two">
+            <div class="terminal-container">
+                <div id="terminal" class="terminal-text fira-mono-regular">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer fira-mono-regular">
+            <!-- <span>Hi, do yourself a favor and <i>do not</i> look at the JavaScript - it's kinda cursed :D</span> -->
+            
+            <span>After a bit of reverse engineering and cobbling together some cursed JS code it's here!</span>
+            <br/>
+            <span>The R8A2 Password easily accessible.</span>
+            <span>Check out the source code <a href="https://github.com/AuriRex/A2Password">here</a>. Cool interactive terminal from <a href="https://github.com/jcubic/jquery.terminal">here</a>.</span>
+        </div>
+    </div>
+    
+</body>
+</html>
