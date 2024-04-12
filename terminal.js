@@ -50,13 +50,13 @@ const commands = {
 
         if (program === "DENOFWOLVES.EXE") {
             this.echo("Executing '"+program+"'");
-            window.open("https://www.denofwolves.com/", '_blank').focus();
+            OpenUrlInNewTab("https://www.denofwolves.com/");
             return;
         }
 
         if (program === "GTFO.EXE") {
             this.echo("Executing '"+program+"'");
-            window.open("https://gtfothegame.com/", '_blank').focus();
+            OpenUrlInNewTab("https://www.gtfothegame.com/");
             return;
         }
 
@@ -164,6 +164,15 @@ const commands = {
         this.echo("");
     }
 };
+
+function OpenUrlInNewTab(url) {
+    let win = window.open(url, '_blank');
+    if (win != null) {
+        win.focus();
+    } else {
+        $('#terminal').terminal().error("PERMISSION OVERRIDE NEEDED TO ACCESS REMOTE SYSTEM.");
+    }
+}
 
 function SetupTerminal() {
     $('#terminal').terminal(commands, {
