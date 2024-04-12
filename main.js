@@ -19,7 +19,10 @@ async function FlashCodesAndStuff() {
     const bgImg = document.getElementById("bg-img");
     bgImg.style = "background-image: url(\"img/GTFO_" + (Math.floor(Math.random() * 3) + 1) + ".jpg\");";
 
+    const codeContainer = document.getElementById("code-display");
     
+    codeContainer.style = "display: block;"
+
     const code = document.getElementById("code");
     const codePrevious = document.getElementById("code-prev");
     const codeNext = document.getElementById("code-next");
